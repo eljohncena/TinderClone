@@ -1,10 +1,18 @@
 import React from 'react';
 import './Header.css';
+import PersonIcon from '@mui/icons-material/Person';
+import IconButton from '@mui/material/IconButton';
 
 const header = () => {
   return (
     <div className='header'>
-        <h2>I am a header</h2>
+        <IconButton>
+        <PersonIcon fontSize="large" className='header__icon' />
+        </IconButton>
+        
+        <img className="header__logo"
+            src="https://1000logos.net/wp-content/uploads/2018/07/Tinder-icon.png"
+            alt=""/>
     </div>
   )
 }
