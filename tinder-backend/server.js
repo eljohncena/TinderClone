@@ -1,13 +1,16 @@
 import express from "express";
 import mongoose from 'mongoose';
 import Cards from './dbCards.js';
+import Cors from 'cors';
 
 // app config
 const app = express();
 const port = process.env.PORT || 8001;
 const connection_url = "mongodb+srv://Master-Tinder:admin12345@cluster0.icorp.mongodb.net/?retryWrites=true&w=majority";
-// Middlewares
 
+// Middlewares
+app.use(express.json());
+app.use(Cors());
 
 // DB Config
 mongoose.connect(connection_url, {

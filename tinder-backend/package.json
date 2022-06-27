@@ -17,5 +17,9 @@
   "bugs": {
     "url": "https://github.com/eljohncena/TinderClone/issues"
   },
-  "homepage": "https://github.com/eljohncena/TinderClone#readme"
+  "homepage": "https://github.com/eljohncena/TinderClone#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "mongoose": "^6.4.0"
+  }
 }
